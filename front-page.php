@@ -5,7 +5,7 @@
         <img id="layer0" src="./wp-content/uploads/2021/01/header0.png">
         <img id="layer1" src="./wp-content/uploads/2021/01/header1.png">
         <img id="layer2" src="./wp-content/uploads/2021/01/header2.png">
-        <h1 id="layer3">heartsss <nobr>of helen</nobr></h1>
+        <h1 id="layer3">heart <nobr>of helen</nobr></h1>
         <img id="layer4" src="./wp-content/uploads/2021/01/header3.png">
         <div class="scrolldown">
             <h1>scrolldown</h1>
