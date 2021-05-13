@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap')
+@import ./contact
+@import ./work-with-me
+@import ./recommendations
+@import ./nav
+@import ./basic
+$small: 800px
+$medium: 1000px
+
+
+
+
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Montserrat', sans-serif
+    line-height: 1.5
+
+.only_mobile
+    display: none
+    @media screen and (max-width: $small)
+        display: unset
+        margin: 0 0 5vh 0
+        font-size: 4em
+
+p, h1, h2, a 
+    word-break: break-word
+
+
+body
+    overflow-x: hidden
+    overscroll-behavior-y: none
+
+header
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100vw
+    @media screen and (max-width: $small)
+        height: 50vh
+
+    img
+        position: absolute
+        left: 0
+        top: 0
+        object-fit: cover
+        width: 100%
+        height: 100vh
+        @media screen and (max-width: $small)
+            object-position: 47.5%
+            height: 50vh
+
+    #layer0
+        z-index: 0
+        @media screen and (max-width: $small)
+            position: fixed!important
+    
+    #layer1
+        z-index: 1
+        @media screen and (max-width: $small)
+            position: fixed!important
+
+    #layer2
+        z-index: 2
+        @media screen and (max-width: $small)
+            position: fixed!important
+
+    #layer4
+        z-index: 4
+        @media screen and (max-width: $small)
+            position: fixed!important
+            z-index: 3
+
+    h1
+        margin-top: -10vh
+        position: absolute
+        color: white
+        border: 20px solid white
+        padding: 1vh 1vw
+        font-size: 150px
+        text-transform: lowercase
+        font-weight: 800
+        z-index: 3
+        animation: 1s ease-out 0s 1 onloadscale
+        text-align: center
+
+        @media screen and (max-width: $small)
+            font-size: 11vw
+            top:  20vh
+            position: fixed
+            font-weight: bold
+            width: auto
+            border: 2vw solid white
+            padding: 2vh 5vw
+
+
+
+
+
+
+
+section
+    left: 0
+    top: 0vh
+    position: relative
+    background: #ffffff
+    //background: linear-gradient(0deg, #ffffff 0%, #ffffff 93%, #ffffff4c 96%, #ffffff00 100%)
+    border-bottom: white 2px solid
+    z-index: 4
+    margin-bottom: 20vh
+        
+
+    .goback
+        position: fixed
+        top: 3vh
+        left: 3vw
+        color: white
+        font-size: 5vh
+        z-index: 60
+        @media screen and (max-width: $small)
+            display: none
+
+        a
+            color: white
+            text-decoration: none
+        
+            &:hover
+                color: #c7c7c7
+                cursor: pointer
+
+    & .section__first
+        display: flex
+        justify-content: flex-start
+        height: 100vh
+        box-shadow: 3px 26px 73px 0px rgba(0,0,0,0.75)
+
+
+        .only_mobile
+            display: none
+
+        @media screen and (max-width: $small)
+            box-shadow: 3px 26px 73px 0px #00000000
+            .left
+                display: none
+            .right
+                width: 100vw!important
+                .only_desktop
+                    display: none
+                .only_mobile
+                    display: unset
+                    top: 10vh
+                    margin: 0 auto
+                    width: 100vw
+                    padding-left: 20px
+
+        .left, .right
+            height: 100%
+            width: 50%
+
+            h1
+                top: 65vh
+                font-size: 15vw
+                position: absolute
+                z-index: 6
+            
+            p
+                font-size: 26px
+                padding: 5vh
+                margin-top: 20vh
+                @media screen and (max-width: $small)
+                    margin-top: 10vh
+                
+
+        .left
+
+            img
+                object-fit: cover
+                width: 50vw
+                height: 100vh
+                position: absolute
+
+            .layer0
+                z-index: 5
+
+            .layer2
+                z-index: 7
+            h1
+                right: 50%
+                color: white
+                padding-right: 10px
+                padding-left: 5vh
+                text-shadow: 4px 4px 50px rgba(0,0,0,0.3)
+
+
+        .right
+            background-color: white
+            position: relative
+
+            h1
+                padding-left: 10px
+
+
+    .section__second
+        margin-top: 105vh
+        display: flex
+        justify-content: center
+        flex-direction: row
+        height: 100vh
+        position: relative
+        z-index: 6
+        box-shadow: 3px 26px 73px 0px rgba(0,0,0,0.75)
+        @media screen and (max-width: $small)
+            box-shadow: 0px 0px 0px 0px #ffffff
+
+        .left, .right
+            height: 100vh
+
+        .left
+            width: 35vw
+            background-color: #181818
+            display: flex
+            justify-content: center
+            align-content: center
+
+            h1
+                font-size: 10vh
+                text-align: center
+                transform: rotate(270deg)
+                top: 50%
+                position: absolute
+                color: white
+                width: fit-content
+                word-break: normal
+
+                .lineheight
+                    line-height: 0.9
+
+
+        .right
+            width: 65vw
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            background-color: white
+
+
+            #right__above
+                width: 100%
+                height: 60vh
+                object-fit: cover
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                position: relative
+                padding: 0 5vw 0 -35vw
+
+                h1
+                    font-size: 4vw
+                    margin-top: 5vh
+                    margin-left: -35vw
+                p
+                    font-size: 2vw
+                    padding: 5vh 0
+        
+
+            #right__below
+                position: absolute
+                z-index: 50
+                display: flex
+                justify-content: center
+                align-items: flex-end
+                flex-direction: row
+                left: 0
+                height: 100vh
+                width: 100vw
+            
+
+
+                div
+                    background-color: white
+                    height: 40vh
+                    max-height: 400px
+                    width: 25vw
+                    max-width: 400px
+                    margin: 10vh 2vw
+                    border-radius: 25px
+                    box-shadow: 0px 7px 64px -30px rgba(0,0,0,0.75)
+                    transition: .5s
+                    position: relative
+                    @media screen and (max-width: $small)
+                        box-shadow: 3px 26px 73px 0px #00000000
+
+                    img
+                        object-fit: cover
+                        width: 100%
+                        height: 100%
+                        border-radius: inherit
+                        opacity: 1
+
+                    &:hover
+                        cursor: pointer
+                        box-shadow: none
+                        transform: scale(0.99)
+                    
+                    h1
+                        position: absolute
+                        bottom: 15%
+                        left: 0%
+                        font-size: 50px
+                        color: black
+                        background-color: white
+                        padding: 5px 10px
+                        opacity: 1
+                    
+                    p
+                        position: absolute
+                        bottom: 10%
+                        left: 0%
+                        font-size: 20px
+                        color: white
+                        background-color: black
+                        opacity: 1                        
+                        padding: 5px 10px
+            
+    @media screen and (max-width: $small)
+        .section__second
+            position: unset!important
+            margin-top: 0vh!important
+            .right
+                #right__below
+                    flex-direction: column
+                    padding-left: 0vw
+                    height: auto
+                    padding-top: 20vh
+                    div
+                        width: 90vw
+                        margin: 2vh 5vw
+                        padding-left: 0vw
+                #right__above
+                    display: none
+                    
+
+            .left
+                background-color: white
+                h1
+                    display: none
+
+
+
+
+footer
+    position: absolute
+    z-index: 5
+    min-height: 20vh
+    top: 320vh
+    bottom: 0
+    width: 100vw
+    background-color: white
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    box-shadow: 3px 26px 73px 0px rgba(0,0,0,0.75)
+
+
+    a
+        text-decoration: none
+        color: initial
+
+    @media screen and (max-width: $small)
+        box-shadow: 3px 26px 73px 0px #00000000
+    h1
+        font-size: 5vh
+        font-weight: normal
+        text-align: center
+
+    h2
+        font-size: 2.5vh
+        font-weight: normal
+        text-align: center
+        margin-bottom: 15px
+
+@media screen and (max-width: $small)
+    footer
+        bottom: 0
+
+
+
+
+// blog
+
+.blogpage
+    overflow: hidden
+
+    nav
+        margin-top: 0
+        position: fixed
+        width: 65vw
+        top: 0
+
+    section
+        margin-bottom: 0
+
+
+    .section__second
+        margin-top: 0
+        justify-content: flex-end
+        
+
+        .left
+            position: fixed
+            left: 0
+            @media screen and (max-width: $medium)
+                display: none
+
+    
+        .right
+            overflow: scroll
+            width: 65vw
+            align-content: flex-start
+            padding: 10vh 0 
+            @media screen and (max-width: $medium)
+                padding: 20vh 0
+                width: 100vw
+
+            .blogheading
+                font-size: 1.5em
+                padding: 5vh 5vw
+
+            article
+                height: 400px
+                background-color: black
+                margin: 20px
+                position: relative
+                transition: 1s
+                display: flex
+                box-shadow: 5px 5px 34px 0px rgba(0,0,0,0.16)
+                @media screen and (max-width: $medium)
+                    margin: 20px 0
+                    flex-direction: column
+                    height: auto
+                    width: 70vw
+                    border-radius: 10px
+                @media screen and (max-width: $small)
+                    width: 90vw
+
+                
+
+                img
+                    object-fit: cover
+                    height: 100%
+                    width: 293px
+                    opacity: 0.9
+                    @media screen and (max-width: $medium)
+                        width: 100%
+                        border-radius: 10px 10px 0 0
+                        height: auto
+                    
+                h1
+                    font-size: 1.5rem
+                    transition: 1s
+                    padding: 10px
+                    text-transform: uppercase
+                    background-color: white
+                    width: 100%
+                    color: black
+                    border-bottom: 2px solid black
+                
+
+                main
+                    background-color: #ffffff
+                    transition: 1s
+                    display: flex
+                    align-items: flex-start
+                    width: 293px
+                    flex-direction: column
+                    padding: 10px
+                    @media screen and (max-width: $medium)
+                        width: 100%
+                        border-radius: 0 0 10px 10px
+                        
+
+                    p
+                        font-size: 1rem
+                        transition: 1s
+                        a
+                            text-decoration: none
+
+
+                a
+                    color: black
+
+                &:hover
+                    //background-color: white
+                    //width: 293px
+                    //height: 293px
+                      
+                    
+                    h1
+                        //top: 0%
+                        //transform: translate(0%, 0%)
+                        //z-index: 51
+                        //
+                    
+                    //main
+                    //    height: 293px
+                    //    padding: 10px 10px 10px 10px
+//
+                    //    p
+                    //        opacity: 1
+//
+    @media screen and (max-width: $small)
+        .section__second
+            margin-top: 0vh!important
+            .right
+                margin-top: 0
+                width: 100vw!important
+
+            .left
+                display: none
+                background-color: white
+
+
+
+
+                    
+
+                    
+            
+
+            
+
+@keyframes slideInFromTop 
+    0% 
+        opacity: .6
+    100% 
+        opacity: 1
+  
+@keyframes onloadscale 
+    0% 
+        opacity: .2
+    100% 
+        opacity: 1
+
+
+section   
+    /* This section calls the slideInFromTop animation we defined above */
+    animation: 1s ease-out 0s 1 slideInFromTop
+
+
+
+// single blog page
+
+.singleblog
+    padding: 15vh 5vw
+
+    #navbar
+        top: 0
+
+    .title
+        font-size: 3em
+        margin: 5vh 0
+        padding: 1vh 0
+        text-transform: uppercase
+        border-bottom: 5px solid black
+
+    .content
+        padding-bottom: 20vh
+        
+        p
+            padding: 10px 0
+            font-size: 20px
+
+            strong
+                font-size: 23px
+
+        ul
+            padding: 10px 50px
+            font-size: 20px
+            li
+                padding: 2px
+    
+    .comments-area
+
+        p
+            margin: 15px 0
+
+        input, textarea
+            border: none
+            border-bottom: 1px solid black
+        .submit
+            border: 1px solid black
+        .comment-form-comment
+            display: flex
+            flex-direction: column
+        textarea
+            height: 30px
+
+    .other_posts
+        border-top: 5px solid black
+        display: flex
+        justify-content: flex-start
+        padding: 5vh 0
+        margin: 5vh 0
+
+        @media screen and (max-width: $small)
+            flex-direction: column
+
+        article
+            height: 17.5vw
+            width: 17.5vw
+            background-color: black
+            margin: 15px
+            position: relative
+            transition: 1s
+            @media screen and (max-width: $small)
+                width: 100%
+                height: 95vw
+                margin: 15px 0
+
+
+            img
+                object-fit: cover
+                height: 100%
+                width: 100%
+                opacity: 0.9
+
+            h1
+                font-size: 1.5rem
+                position: absolute
+                top: 100%
+                transform: translate(0%, -100%)
+                transition: 1s
+                padding: 10px
+                text-transform: uppercase
+                background-color: white
+                width: 100%
+                color: black
+                border-bottom: 2px solid black
+
+
+            main
+                background-color: #ffffff
+                position: absolute
+                top: 0
+                transition: 1s
+                top: 100%
+                transform: translate(0%, -100%)
+                z-index: 50
+                display: flex
+                justify-content: center
+                align-items: flex-end
+                height: 0
+                width: 100%
+
+
+                p
+                    font-size: 1rem
+                    opacity: 0
+                    transition: 1s
+
+            a
+                color: black
+
+            &:hover
+                background-color: white
+
+
+                h1
+                    transform: translate(0%, 0%)
+                    z-index: 51
+
+
+                main
+                    height: 100%
+                    padding: 10px 10px 10px 10px
+
+                    p
+                        opacity: 1
+    
+
+#comments
+    .comment-list
+        list-style-type: none
+
+        .comment //normal comment
+            margin: 20px 0
+
+            .avatar
+                display: none
+
+            .children //comment anwser
+                list-style-type: none
+                margin-left: 50px
+                .comment
+
+// scroll down animation home
+
+$ani-speed: 2s
+$ani-delay: 1s
+
+.scrolldown
+    position: absolute
+    z-index: 10
+    bottom: 50px
+    display: flex
+    justify-content: center
+
+    h1
+        font-size: 25px
+        border: none
+        word-break: normal
+        position: absolute
+        left: 50%
+        transform: translate(-40%, 50%)
+        bottom: 50px
+
+
+
+.arrow
+    opacity: 0
+    transform-origin: 50% 50%
+    transform: translate3d(-50%, -50%, 0)
+
+.arrow-first
+    animation: arrow-movement $ani-speed ease-in-out infinite
+    margin-top: -10px
+.arrow-second
+    animation: arrow-movement $ani-speed $ani-delay ease-in-out infinite
+
+.arrow:before,
+.arrow:after
+    background: #fff
+    content: ''
+    display: block
+    height: 3px 
+    position: absolute
+    top: 0
+    left: 0
+    width: 30px
+
+.arrow:before
+    transform: rotate(45deg) translateX(-23%)
+    transform-origin: top left
+
+.arrow:after
+    transform: rotate(-45deg) translateX(23%)
+    transform-origin: top right
+
+// Animation
+@keyframes arrow-movement
+    0% 
+        opacity: 0
+        top: 45%
+
+    70%
+        opacity: 1
+
+    100% 
+        opacity: 0
+
+.ytvideo
+    width: 500px
+    max-height: 100%
+    max-width: 90vw
+    height: 300px

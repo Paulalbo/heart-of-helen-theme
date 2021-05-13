@@ -1,0 +1,145 @@
+#work-with-me nav {
+  position: fixed;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 800px) {
+  #work-with-me .reversecolumns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+#work-with-me .layout {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+
+#work-with-me .layout .left {
+  position: absolute;
+  background-color: #fff;
+  width: 100vw;
+  height: 100%;
+  z-index: 5;
+  top: 0;
+}
+
+@media screen and (max-width: 800px) {
+  #work-with-me .layout .left {
+    display: none;
+  }
+}
+
+#work-with-me .layout .right {
+  position: absolute;
+  left: 0;
+  width: 40vw;
+  height: 100%;
+  z-index: 6;
+  background-color: grey;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+@media screen and (max-width: 800px) {
+  #work-with-me .layout .right {
+    width: 100vw;
+  }
+}
+
+#work-with-me h1 {
+  top: 25vh;
+  font-size: 4em;
+  left: 70%;
+  position: absolute;
+  text-transform: uppercase;
+  background-color: white;
+  color: #181818;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 6;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2vh 5vw;
+  word-wrap: normal;
+}
+
+@media screen and (max-width: 800px) {
+  #work-with-me h1 {
+    top: unset;
+    -webkit-transform: unset;
+            transform: unset;
+    position: unset;
+  }
+}
+
+#work-with-me section {
+  margin-top: 15vh;
+  min-height: 100vh;
+  padding: 0 5vw;
+}
+
+@media screen and (max-width: 800px) {
+  #work-with-me section {
+    margin-top: 0;
+  }
+}
+
+#work-with-me section .wp-block-image {
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  #work-with-me section .wp-block-column {
+    display: table;
+  }
+}
+
+#work-with-me section img {
+  width: auto;
+  height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+  #work-with-me section img {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+#work-with-me section h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+  padding: 5vh 0 3vh 0;
+}
+
+#work-with-me section p {
+  font-size: 1.2em;
+}
+
+#work-with-me ul {
+  margin-left: 30px;
+}
+
+#work-with-me footer {
+  position: unset;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+#work-with-me footer h1 {
+  font-size: 5vh;
+  top: unset;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  position: unset;
+}
+/*# sourceMappingURL=work-with-me.css.map */
