@@ -14,7 +14,7 @@ include 'header.php'; ?>
     <section class="recommendation">
  
     <?php  $args = array( 
-      'category_name' => 'c', 
+      'category_name' => 'recommendation', 
       'post_status' => 'publish' 
      ); 
      $postLoop = new WP_Query($args); 
