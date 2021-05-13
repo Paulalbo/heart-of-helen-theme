@@ -324,7 +324,6 @@
 }
 
 .recommendation-post {
-  width: 40vw;
   max-width: 500px;
   height: auto;
   margin: 30px;
@@ -333,12 +332,6 @@
           box-shadow: 0px 7px 64px -30px rgba(0, 0, 0, 0.75);
   position: relative;
   border-radius: 20px;
-}
-
-@media screen and (max-width: 800px) {
-  .recommendation-post {
-    width: 100vw;
-  }
 }
 
 .recommendation-post__img {
@@ -370,6 +363,7 @@
   padding: 5px 10px;
   opacity: 1;
   border-radius: inherit;
+  bottom: 0;
 }
 
 #work-with-me nav {
