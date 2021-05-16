@@ -331,7 +331,8 @@
 
 .recommendation-post {
   max-width: 500px;
-  height: auto;
+  height: 50vh;
+  max-height: 500px;
   margin: 30px;
   background-color: #fff;
   -webkit-box-shadow: 0px 7px 64px -30px rgba(0, 0, 0, 0.75);
@@ -362,9 +363,7 @@
 .recommendation-post__title {
   position: absolute;
   background: white;
-  top: 60%;
-  position: absolute;
-  font-size: 50px;
+  font-size: 30px;
   color: black;
   padding: 5px 10px;
   opacity: 1;
