@@ -17,11 +17,16 @@ require('./wp-blog-header.php');
             <div class="right">
 
 
-            
-        <?php if(have_posts()) : ?>
+        <?php  $args = array( 
+          'category_name' => 'blog', 
+          'post_status' => 'publish' 
+         ); 
+         $postLoop = new WP_Query($args); 
+        ?>    
+        <?php if($postLoop->have_posts()) : ?>
         <!--  If there are posts available  -->
 
-            <?php while(have_posts()) : the_post(); ?>
+            <?php while($postLoop->have_posts()) : $postLoop->the_post(); ?>
             <!-- if there are posts, iterate the posts in the loop -->
 
                 <article>

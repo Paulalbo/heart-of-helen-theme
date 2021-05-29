@@ -17,10 +17,15 @@ require('./wp-blog-header.php');
             <h1 class="only_mobile">Blog</h1>
             <p class="blogheading">Ein Ort für Dinge, die mir am Herzen liegen, die mich im Alltag begleiten und mein Umfeld prägen. Was ich hier teile, bereitet mir und vielleicht auch in Zukunft dir Freude.</p>
 
-            
-        <?php if(have_posts()) : ?>
+        <?php  $args = array( 
+          'category_name' => 'blog', 
+          'post_status' => 'publish' 
+         ); 
+         $postLoop = new WP_Query($args); 
+        ?>        
+        <?php if($postLoop->have_posts()) : ?>
 
-            <?php while(have_posts()) : the_post(); ?>
+            <?php while($postLoop->have_posts()) : $postLoop->the_post(); ?>
 
             <article>
                     
