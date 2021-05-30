@@ -52,7 +52,7 @@
                     </div>
                     <div onclick="location.href='./recommendations';" style="cursor:pointer;" id="recommendations">
                         <h1>Products</h1>
-                        <p>I'M USING DAILY</p>
+                        <p>I'M USING</p>
                         <img src="https://heartofhelen.com/wp-content/uploads/2021/05/5.jpg">
                     </div>
                 </div>
