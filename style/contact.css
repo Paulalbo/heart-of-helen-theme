@@ -87,6 +87,7 @@
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   background-color: #ffffff00;
+  width: auto;
 }
 
 #contact footer #footer-sidebar {
