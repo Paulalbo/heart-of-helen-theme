@@ -25,7 +25,7 @@
             <div class="right">
                 <p>
                 <strong>GOOD TO  SEE YOU!</strong><br><br>
-                Ich bin Helene, Yogalehrerin und Fitnesstrainerin aus Wien. Ich liebe Bewegung, Natur, Reisen und Abenteuer und freue mich darauf, mein Wissen mit dir zu teilen. Klick dich durch, schau dich um und lass dich inspirieren. Schön, dass du da bist!
+                Ich bin Helene, Yogalehrerin und Fitnesstrainerin aus Wien. Ich liebe Yoga, Sport, Natur und Abenteuer und freue mich mein Wissen mit dir zu teilen!
                 </p>
                 <h1 class="only_desktop">me</h1>
             </div>

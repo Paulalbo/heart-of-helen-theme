@@ -15,7 +15,7 @@ require('./wp-blog-header.php');
 
             <div class="right">
             <h1 class="only_mobile">Blog</h1>
-            <p class="blogheading">Ein Ort für Dinge, die mir am Herzen liegen, die mich im Alltag begleiten und mein Umfeld prägen. Was ich hier teile, bereitet mir und vielleicht auch in Zukunft dir Freude.</p>
+            <p class="blogheading">Mein Blog. Hier findest du Artikel, Tipps und Produktinfos rund um die Themen Sport, Regeneration, die Psyche, Yoga und Mobility.</p>
 
         <?php  $args = array( 
           'category_name' => 'blog', 
